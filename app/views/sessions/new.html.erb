@@ -1,0 +1,15 @@
+<%= form_tag sessions_path, remote: true do %>
+  <div>
+    <%= label_tag "Email" %>
+    <%= text_field_tag :username, nil, placeholder: "Email" %>
+  </div>
+
+  <div>
+    <%= label_tag "Password" %>
+    <%= password_field_tag :password, nil, placeholder: "Password" %>
+  </div>
+
+  <div>
+    <%= submit_tag "Log In"%>
+  </div>
+<% end %>
